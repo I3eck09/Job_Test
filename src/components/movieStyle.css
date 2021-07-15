@@ -1,0 +1,78 @@
+.movie {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-card {
+  width: 300px;
+  height: 550px;
+  margin: 20px;
+  background-color: #24427A;
+  position: relative;
+  overflow: hidden;
+}
+
+.movie img {
+  max-width: 100%;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 10px;
+}
+
+.movie-info .title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.movie-rate {
+  height: 100%;
+  width: 10%;
+  background-color: orange;
+  border-radius: 5px;
+  font-size: 10px;
+}
+
+.button-block {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.movie-title {
+  color: #FFFFFF;
+}
+
+.movie-rate {
+  color: #000000;
+}
+
+.add-cart {
+  border-radius: 5px;
+  border: 0;
+  background-color: lightskyblue;
+  cursor: pointer;
+}
+
+.movie-overview {
+  background-color: #FFFF;
+  color: #141518;
+  position: absolute;
+  padding: 1rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie-card:hover .movie-overview {
+   transform: translateY(-25%);
+}
+
