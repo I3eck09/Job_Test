@@ -39,7 +39,7 @@ const Homepage = () => {
     const newSelected = [...cart]
 
     if (currentIndex === -1) {
-      localStorage.setItem('Movies', JSON.stringify(cart))
+      
       newSelected.push(movie)
     } else {}
 
@@ -80,7 +80,9 @@ const Homepage = () => {
 
   useEffect(() => {
     getMovieList()
-  }, [])
+
+    localStorage.setItem('Movies', JSON.stringify(cart))
+  }, [cart])
 
   return (
     <div className='container'>
